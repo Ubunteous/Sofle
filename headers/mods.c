@@ -53,6 +53,7 @@ const key_override_t *key_overrides[] = {
 
 // Left-hand colemak home row mods
 #define GUI_W LGUI_T(MY_W)
+#define ALT_W LALT_T(MY_W)
 /* #define ALT_ LALT_T(KC_) */
 #define SFT_C LSFT_T(KC_C)
 #define CTL_D LCTL_T(KC_D)
@@ -65,6 +66,7 @@ const key_override_t *key_overrides[] = {
 #define SFT_H RSFT_T(KC_H)
 /* #define ALT_ RALT_T(KC_) */
 #define GUI_Y RGUI_T(KC_Y)
+#define ALT_Y RALT_T(KC_Y)
 
 // ################# //
 // #   TAP DANCE   # //
