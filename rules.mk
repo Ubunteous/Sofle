@@ -1,6 +1,9 @@
 # convert to uf2 file
 CONVERT_TO=liatris
 
+# to use on azerty keyboard
+# TARGET_AZERTY = yes # does not work as is with ifdef
+
 # split keyboard features
 SPLIT_KEYBOARD = yes
 
@@ -16,8 +19,8 @@ EXTRAKEY_ENABLE = yes
 
 TAP_DANCE_ENABLE = yes
 CAPS_WORD_ENABLE = yes
-AUTO_SHIFT_ENABLE = yes
-MIDI_ENABLE = yes
+# AUTO_SHIFT_ENABLE = yes
+# MIDI_ENABLE = yes
 KEY_OVERRIDE_ENABLE = yes
 TRI_LAYER_ENABLE = yes
 
