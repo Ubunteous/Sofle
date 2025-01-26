@@ -34,6 +34,7 @@ enum layers {
   _NUMROW,
   
   _NAV,
+  _DEBUG
 };
 
 // ################# //
