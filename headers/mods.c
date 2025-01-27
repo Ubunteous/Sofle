@@ -1,5 +1,5 @@
 #include QMK_KEYBOARD_H
-#include "aliases.h"
+#include "aliases_ahk.h"
 
 #define ONESHOT_TAP_TOGGLE 2
 
@@ -27,13 +27,25 @@
 const key_override_t comm_key_override = ko_make_basic(MOD_MASK_SHIFT, MY_COMM, MY_QUES);
 const key_override_t dot_key_override = ko_make_basic(MOD_MASK_SHIFT, MY_DOT, MY_SCLN);
 const key_override_t slash_key_override = ko_make_basic(MOD_MASK_SHIFT, MY_SLSH, MY_COLN);
+/* const key_override_t dirty_next_ws = ko_make_basic(MOD_MASK_ALT, MY_I, MY_O); */
+/* const key_override_t dirty_kill_window = ko_make_basic(MOD_MASK_ALT, MY_X, LALT(KC_F4)); */
 
 // This globally defines all key overrides to be used
 const key_override_t *key_overrides[] = {
   &comm_key_override,
   &dot_key_override,
-  &slash_key_override
+  &slash_key_override,
+  /* &dirty_next_ws, */
+  /* dirty_kill_window */
 };
+
+
+/* const uint16_t PROGMEM dirty_next_ws[] = {MY_Y, MY_X, COMBO_END}; */
+/* const uint16_t PROGMEM dirty_kill_window[] = {MY_W, MY_I, COMBO_END}; */
+/* combo_t key_combos[] = { */
+/*   COMBO(dirty_next_ws, LALT(MY_I)), */
+/*   COMBO(dirty_kill_window, LALT(F4)), */
+/* }; */
 
 // ############### //
 // #   MOD TAP   # //
@@ -41,32 +53,32 @@ const key_override_t *key_overrides[] = {
 
 // Left-hand home row mods
 #define GUI_A LGUI_T(MY_A)
-#define ALT_R LALT_T(KC_R)
-#define CTL_S LCTL_T(KC_S)
-#define SHT_T LSFT_T(KC_T)
+#define ALT_R LALT_T(MY_R)
+#define CTL_S LCTL_T(MY_S)
+#define SHT_T LSFT_T(MY_T)
 
 // Right-hand home row mods
-#define SFT_N RSFT_T(KC_N)
-#define CTL_E RCTL_T(KC_E)
-#define ALT_I RALT_T(KC_I)
-#define GUI_O RGUI_T(KC_O)
+#define SFT_N RSFT_T(MY_N)
+#define CTL_E RCTL_T(MY_E)
+#define ALT_I LALT_T(MY_I)
+#define GUI_O RGUI_T(MY_O)
 
 // Left-hand colemak home row mods
 #define GUI_W LGUI_T(MY_W)
 #define ALT_W LALT_T(MY_W)
-/* #define ALT_ LALT_T(KC_) */
-#define SFT_C LSFT_T(KC_C)
-#define CTL_D LCTL_T(KC_D)
-#define SFT_V LSFT_T(KC_V)
+/* #define ALT_ LALT_T(MY_) */
+#define SFT_C LSFT_T(MY_C)
+#define CTL_D LCTL_T(MY_D)
+#define SFT_V LSFT_T(MY_V)
 
 // Right-hand colemak home row mods
-#define CTL_K RCTL_T(KC_K)
-#define SFT_K RSFT_T(KC_K)
-#define CTL_H RCTL_T(KC_H)
-#define SFT_H RSFT_T(KC_H)
-/* #define ALT_ RALT_T(KC_) */
-#define GUI_Y RGUI_T(KC_Y)
-#define ALT_Y RALT_T(KC_Y)
+#define CTL_K RCTL_T(MY_K)
+#define SFT_K RSFT_T(MY_K)
+#define CTL_H RCTL_T(MY_H)
+#define SFT_H RSFT_T(MY_H)
+/* #define ALT_ RALT_T(MY_) */
+#define GUI_Y RGUI_T(MY_Y)
+#define ALT_Y LALT_T(MY_Y)
 
 // ################# //
 // #   TAP DANCE   # //
