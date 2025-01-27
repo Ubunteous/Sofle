@@ -23,6 +23,7 @@ CAPS_WORD_ENABLE = yes
 # MIDI_ENABLE = yes
 KEY_OVERRIDE_ENABLE = yes
 TRI_LAYER_ENABLE = yes
+# COMBO_ENABLE = yes
 
 # macros: gives access to two macros
 # DYNAMIC_MACRO_ENABLE = yes
