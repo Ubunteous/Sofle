@@ -2,6 +2,7 @@
 #include "aliases_ahk.h"
 
 #define ONESHOT_TAP_TOGGLE 2
+#define ONESHOT_TIMEOUT 5000
 
 // Configure the global tapping term (default: 200ms)
 #define TAPPING_TERM 200
