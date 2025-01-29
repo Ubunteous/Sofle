@@ -35,17 +35,7 @@ const key_override_t *key_overrides[] = {
   &comm_key_override,
   &dot_key_override,
   &slash_key_override,
-  /* &dirty_next_ws, */
-  /* dirty_kill_window */
 };
-
-
-/* const uint16_t PROGMEM dirty_next_ws[] = {MY_Y, MY_X, COMBO_END}; */
-/* const uint16_t PROGMEM dirty_kill_window[] = {MY_W, MY_I, COMBO_END}; */
-/* combo_t key_combos[] = { */
-/*   COMBO(dirty_next_ws, LALT(MY_I)), */
-/*   COMBO(dirty_kill_window, LALT(F4)), */
-/* }; */
 
 // ############### //
 // #   MOD TAP   # //

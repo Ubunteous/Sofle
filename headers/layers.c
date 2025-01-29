@@ -9,8 +9,7 @@ enum layers {
 
   _COLEMAK_HR,
   _EXTRA_MODS,
-  
-  
+    
   _FUN,
   _NUM,
 
