@@ -1,11 +1,38 @@
 #include QMK_KEYBOARD_H
 
+// ############## //
+// #   LAYERS   # //
+// ############## //
+
+enum layers {
+  _COLEMAK,
+
+  _COLEMAK_HR,
+  _EXTRA_MODS,
+  
+  
+  _FUN,
+  _NUM,
+
+  _SYM,
+  _SYML,
+  _SYMR,
+  
+  _NAV,
+  /* _MIDI, */
+
+  _NUMROW,
+  _DEBUG
+};
+
 // ################### //
 // #   TRANSITIONS   # //
 // ################### //
 
+//LT() cannot be used with keys beyond the basic set (GEscape will output an r/s)
 /* #define ESC_SYML LT(_SYML, QK_GESC) */
-#define ESC_NUM LT(_NUM, QK_GESC)
+#define ESC_NUM LT(_NUM, KC_ESC)
+
 #define SPC_NAV LT(_NAV, KC_SPC)
 /* #define TAB_FUN LT(_FUN, KC_TAB) */
 #define TAB_SYMR LT(_SYMR, KC_TAB)
@@ -15,26 +42,8 @@
 #define BSP_NUM LT(_NUM, KC_BSPC)
 #define DEL_FUN LT(_FUN, KC_DEL)
 
-// ############## //
-// #   LAYERS   # //
-// ############## //
-
-enum layers {
-  _COLEMAK,
-  _COLEMAK_HR,
-
-  /* _MIDI, */
-  
-  _FUN,
-  _NUM,
-
-  _SYM,
-  _SYML,
-  _SYMR,
-  _NUMROW,
-  
-  _NAV,
-  _DEBUG
+enum custom_keycodes {
+    MY_HOLD_TAP = SAFE_RANGE,  // Custom Keycode
 };
 
 // ################# //
