@@ -25,9 +25,9 @@
 // #   KEY OVERRIDE  # //
 // ################### //
 
-const key_override_t comm_key_override = ko_make_basic(MOD_MASK_SHIFT, MY_COMM, MY_QUES);
-const key_override_t dot_key_override = ko_make_basic(MOD_MASK_SHIFT, MY_DOT, MY_SCLN);
-const key_override_t slash_key_override = ko_make_basic(MOD_MASK_SHIFT, MY_SLSH, MY_COLN);
+const key_override_t comm_key_override = ko_make_basic(MOD_MASK_SHIFT, MY_COMM, MY_QUES); // , or ?
+const key_override_t dot_key_override = ko_make_basic(MOD_MASK_SHIFT, MY_DOT, MY_SCLN); // . or ;
+const key_override_t slash_key_override = ko_make_basic(MOD_MASK_SHIFT, MY_SLSH, MY_COLN); // / or :
 /* const key_override_t dirty_next_ws = ko_make_basic(MOD_MASK_ALT, MY_I, MY_O); */
 /* const key_override_t dirty_kill_window = ko_make_basic(MOD_MASK_ALT, MY_X, LALT(KC_F4)); */
 

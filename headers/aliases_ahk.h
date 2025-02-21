@@ -73,13 +73,13 @@
 #define MY_DIAE S(FR_CIRC) // tremma
 
 #define MY_COMM KC_COMM // ,
-#define MY_QUES S(MY_SLSH) // ?
+#define MY_QUES S(MY_COMM) // ?
 
 #define MY_DOT KC_DOT // .
-#define MY_SCLN KC_SCLN // ;
+#define MY_SCLN S(MY_DOT) // ;
 
 #define MY_SLSH KC_SLASH // /
-#define MY_COLN S(KC_SCLN)  // :
+#define MY_COLN S(MY_SLSH)  // :
 
 /* ############### */
 /* #   SPECIAL   # */
